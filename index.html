@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="建筑设计 · 平面设计 · AIGC — 陆宇婧个人作品集" />
+  <script>
+    if (location.hostname.endsWith("github.io")) {
+      var b = document.createElement("base");
+      b.href = "/lyjportfolio/";
+      document.head.appendChild(b);
+    }
+  </script>
+  <title>陆宇婧 · 作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <a href="#top" class="logo">陆宇婧</a>
+    <div class="header-end">
+      <nav class="nav" data-i18n-attr="aria-label:nav.main">
+        <a href="#work" data-i18n="nav.work">作品</a>
+        <a href="#about" data-i18n="nav.about">关于</a>
+        <a href="#contact" data-i18n="nav.contact">联系</a>
+      </nav>
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="切换为英文">EN</button>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" data-i18n-attr="aria-label:nav.menuOpen">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" data-i18n-attr="aria-label:nav.mobile" hidden>
+    <a href="#work" data-i18n="nav.work">作品</a>
+    <a href="#about" data-i18n="nav.about">关于</a>
+    <a href="#contact" data-i18n="nav.contact">联系</a>
+    <button type="button" class="lang-toggle lang-toggle--mobile" id="lang-toggle-mobile" aria-label="切换为英文">EN</button>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <p class="hero-label" data-i18n="hero.label">Portfolio · 2026</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">
+        建筑、平面与<br /><em>生成式</em> 视觉实践
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc">
+        设计师 / 创作者。关注空间叙事、品牌视觉与 AI 辅助创作，用克制的方式呈现复杂想法。
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary" data-i18n="hero.ctaWork">浏览作品</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">联系我</a>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head">
+        <h2 data-i18n="work.title">作品</h2>
+        <p class="section-sub" data-i18n="work.sub">按类别筛选，点击查看详情</p>
+      </div>
+
+      <div class="filters" role="tablist" data-i18n-attr="aria-label:work.filterLabel">
+        <button type="button" class="filter is-active" data-filter="all" role="tab" aria-selected="true" data-i18n="work.filters.all">全部</button>
+        <button type="button" class="filter" data-filter="architecture" role="tab" aria-selected="false" data-i18n="work.filters.architecture">建筑设计</button>
+        <button type="button" class="filter" data-filter="graphic" role="tab" aria-selected="false" data-i18n="work.filters.graphic">平面设计</button>
+        <button type="button" class="filter" data-filter="aigc" role="tab" aria-selected="false" data-i18n="work.filters.aigc">AIGC</button>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 data-i18n="about.title">关于我</h2>
+          <p data-i18n="about.p1">
+            建筑学背景，兼具空间设计与视觉传达经验。擅长从概念到落地的完整表达——无论是实体空间、品牌系统，还是借助 AI 工具探索的新媒介形态。
+          </p>
+          <p data-i18n-html="about.p2">
+            求职方向：<strong>建筑 / 室内设计、品牌与视觉设计、创意与 AIGC 相关岗位</strong>。欢迎通过邮件或社交账号进一步交流。
+          </p>
+        </div>
+        <ul class="about-meta">
+          <li><span data-i18n="about.education">教育</span><span data-i18n="about.educationValue">温州大学 · 建筑学</span></li>
+          <li><span data-i18n="about.skills">技能</span><span data-i18n="about.skillsValue">Rhino / SU / PS / AI / Midjourney</span></li>
+          <li><span data-i18n="about.languages">语言</span><span data-i18n="about.languagesValue">中文 · English</span></li>
+          <li><span data-i18n="about.location">所在地</span><span data-i18n="about.locationValue">中国</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 data-i18n="contact.title">联系</h2>
+      <p class="contact-lead" data-i18n="contact.lead">有合适的机会或合作，欢迎来信。</p>
+      <a href="mailto:A18906794891@163.com" class="contact-email">A18906794891@163.com</a>
+      <ul class="social-links">
+        <li>
+          <a
+            id="linkedin-link"
+            href="https://www.linkedin.com/in/%E5%AE%87%E5%A9%A7-%E9%99%86-4b4611360/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="social.linkedinProfile"
+          >LinkedIn</a>
+        </li>
+        <li>
+          <a
+            id="xiaohongshu-link"
+            href="https://www.xiaohongshu.com/user/profile/5682673256"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="social.xiaohongshuProfile"
+          >小红书</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 陆宇婧 · <span id="footer-rights">保留所有权利。</span></p>
+    <p class="copyright-notice" data-i18n="footer.copyrightNotice">
+      本站作品版权归陆宇婧所有，未经授权不得用于商业用途或再传播。
+    </p>
+  </footer>
+
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <button type="button" class="modal-close" aria-label="关闭" data-i18n-attr="aria-label:modal.close">×</button>
+    <div class="modal-inner">
+      <figure class="modal-media" id="modal-media">
+        <img id="modal-image" class="modal-image" hidden alt="" />
+        <div class="modal-gallery" id="modal-gallery" hidden></div>
+        <video id="modal-video" class="modal-video" controls playsinline preload="metadata" hidden></video>
+        <iframe id="modal-pdf" class="modal-pdf" title="" hidden></iframe>
+      </figure>
+      <div class="modal-body">
+        <p class="modal-category" id="modal-category"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <p class="modal-pdf-label" id="modal-pdf-label" hidden data-i18n="modal.pdfPreview"></p>
+        <a href="#" class="modal-pdf-link" id="modal-pdf-link" target="_blank" rel="noopener noreferrer" hidden data-i18n="modal.viewPdf">在新标签页打开完整 PDF</a>
+        <ul class="modal-tags" id="modal-tags"></ul>
+        <p class="modal-copyright copyright-notice" data-i18n="footer.copyrightNotice">
+          本站作品版权归陆宇婧所有，未经授权不得用于商业用途或再传播。
+        </p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/contact.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
